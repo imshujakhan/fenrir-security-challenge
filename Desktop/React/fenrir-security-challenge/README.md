@@ -1,48 +1,54 @@
 # Fenrir Security Platform
 
-A security scanning dashboard built with React.
+A security scanning dashboard for monitoring and managing vulnerability scans with real-time activity tracking.
 
-## Getting Started
+## Features
 
-1. Install dependencies:
+- User authentication (login/signup)
+- Security scan dashboard
+- Real-time scan progress tracking
+- Vulnerability findings display
+- Dark/Light theme toggle
+- Search and filter scans
+- Responsive design
+
+## Tech Stack
+
+- React 18 + Vite
+- React Router v6 (navigation)
+- Tailwind CSS (styling)
+- Context API (theme management)
+
+## Quick Start
+
 ```bash
 npm install
-```
-
-2. Run the app:
-```bash
 npm run dev
 ```
 
-3. Open http://localhost:5173 in your browser
-
-## What's Inside
-
-- Login page with sign up form
-- Dashboard showing all scans
-- Scan detail page with live activity
-- Dark and light theme support
-
-## Tech Used
-
-- React
-- Vite
-- Tailwind CSS
-- React Router
+Visit `http://localhost:5173`
 
 ## Project Structure
 
 ```
 src/
-  components/  - Reusable UI parts
-  pages/       - Main screens
-  context/     - Theme settings
-  data/        - Sample data
+├── pages/         # Main screens (Login, Dashboard, ScanDetail)
+├── components/    # Reusable UI components
+├── context/       # Theme context
+└── data/          # Mock scan data
 ```
 
-## Features
+## Features Breakdown
 
-- Switch between dark and light themes
-- Search and filter scans
-- View scan progress and findings
-- Responsive design for mobile and desktop
+**Authentication**: Login and signup forms with validation  
+**Dashboard**: Overview of all security scans with status  
+**Scan Details**: Live activity feed and vulnerability findings  
+**Theme Toggle**: Switch between dark and light modes
+
+## Mock Data
+
+Uses local JSON data for demonstration. Replace with real API in production.
+
+## Styling
+
+Tailwind CSS with custom dark mode configuration.
